@@ -22616,7 +22616,7 @@ module.exports = g;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var imask__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! imask */ "./node_modules/imask/dist/imask.js");
 /* harmony import */ var imask__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(imask__WEBPACK_IMPORTED_MODULE_1__);
@@ -22647,7 +22647,18 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
       }
     });
   }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('header')) {}
 });
+
+global.scroll_to_el = function (el) {
+  var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1000;
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('html, body').animate({
+    scrollTop: jquery__WEBPACK_IMPORTED_MODULE_0___default()(el).offset().top
+  }, t);
+  return false;
+};
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 

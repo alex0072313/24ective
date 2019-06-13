@@ -25,4 +25,16 @@ $(document).ready(function () {
         });
     }
 
+
+    if($('header')){
+
+    }
+
 });
+
+global.scroll_to_el = function(el, t = 1000) {
+    $('html, body').animate({
+        scrollTop: $(el).offset().top
+    }, t);
+    return false;
+}

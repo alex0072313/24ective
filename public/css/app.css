@@ -10689,6 +10689,7 @@ a.text-dark:focus {
 }
 
 header {
+  position: relative;
   background: url("/images/theme/header_bg.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
@@ -10709,6 +10710,20 @@ header .title span:after {
   background: #fff;
   left: 0;
   bottom: -5px;
+}
+
+header .to_zk {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+header .to_zk a {
+  display: inline-block;
+  background: #fff;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .content .heading .title span {

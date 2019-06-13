@@ -26,17 +26,17 @@
 
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Комплексы <span class="sr-only">(current)</span></a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" onclick="scroll_to_el('#zk_block', 1000);">Комплексы</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Схема работы</a>
+                                <a class="nav-link" href="#" onclick="scroll_to_el('#work_block', 1000);">Схема работы</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Преимущества</a>
+                                <a class="nav-link" href="#" onclick="scroll_to_el('#apparts_block', 1000);">Преимущества</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Контакты</a>
+                                <a class="nav-link" href="#" onclick="scroll_to_el('#zk_block', 500);">Контакты</a>
                             </li>
                         </ul>
                         <div class="d-lg-block d-none">
@@ -112,8 +112,10 @@
             </div>
         </div>
 
-        <div class="desk">
-
+        <div class="to_zk">
+            <div class="container text-center">
+                <a href="#" onclick="scroll_to_el('#zk_block', 500);" class="btn btn-lg"><i class="fas fa-angle-double-down mr-2 fa-sm"></i> Выбрать ЖК</a>
+            </div>
         </div>
 
     </header>
