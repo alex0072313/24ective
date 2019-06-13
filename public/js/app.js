@@ -22648,8 +22648,57 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     });
   }
 
-  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('header')) {}
-});
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.parth_img').on('click', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.parth_image_preview').attr('src', jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).data('img'));
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#parth_modal .modal-title').text(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('title'));
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#parth_modal').modal('show');
+    return false;
+  });
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('#whatsapp').length) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#whatsapp .close').on('click', function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').removeClass('show_whatsapp');
+    });
+  }
+
+  getwhatsapp();
+}); //Всплыв. окно с журналом
+
+function getwhatsapp() {
+  var box = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#whatsapp');
+
+  if (box.length) {
+    var show = function show() {
+      //var res = checkcookie('getwhatsapp');
+      //if(res === undefined){
+      var date = new Date(new Date().getTime() + 86400 * 1000);
+      document.cookie = "getwhatsapp=" + cookie + "; path=/; expires=" + date.toUTCString() + '"';
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').addClass('show_whatsapp'); //}
+    };
+
+    var close = function close() {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').removeClass('show_whatsapp');
+    };
+
+    var checkcookie = function checkcookie(name) {
+      var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+      return matches ? decodeURIComponent(matches[1]) : undefined;
+    };
+
+    var timeout = box.data('timeout') ? box.data('timeout') : 13000,
+        closebtn = box.find('.close'),
+        cookie = 'wasshow';
+    ;
+    ;
+    ;
+    setTimeout(function () {
+      show();
+    }, timeout);
+    closebtn.on('click', function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').removeClass('show_whatsapp');
+    });
+  }
+}
 
 global.scroll_to_el = function (el) {
   var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1000;

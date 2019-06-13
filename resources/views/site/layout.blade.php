@@ -18,29 +18,40 @@
             <div class="container py-3">
 
                 <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                    <a class="navbar-brand" href="#"><img src="/images/theme/logo2.png" alt="" width="83" height="75"></a>
+                    <a class="navbar-brand py-0" href="#"><img src="/images/theme/logo2.png" alt="" width="83" height="75"></a>
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" onclick="scroll_to_el('#zk_block', 1000);">Комплексы</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" onclick="scroll_to_el('#work_block', 1000);">Схема работы</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" onclick="scroll_to_el('#apparts_block', 1000);">Преимущества</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" onclick="scroll_to_el('#zk_block', 500);">Контакты</a>
-                            </li>
-                        </ul>
+                        <div class="mr-auto ml-3">
+
+                            <div class="mb-2 address font-weight-light d-lg-block d-none">
+                                <i class="fas fa-map-marker-alt mr-1"></i> г.Новороссийск, ул. Лейтенанта Шмидта, д.39
+                            </div>
+
+                            <ul class="navbar-nav mt-md-0 mt-3">
+                                <li class="nav-item pl-0">
+                                    <a class="btn btn-outline-light" href="#" onclick="scroll_to_el('#zk_block', 1000);">Комплексы</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-outline-light" href="#" onclick="scroll_to_el('#work_block', 1000);">Схема работы</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-outline-light" href="#" onclick="scroll_to_el('#apparts_block', 1000);">Преимущества</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-outline-light" href="#" onclick="scroll_to_el('#zk_block', 500);">Контакты</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+
                         <div class="d-lg-block d-none">
-                            <div class="mb-2"><a href="tel:+79186674224" class="h4 text-white font-weight-light">+7 (918) 667-42-24</a></div>
+
+                            <div class="mb-2"><a href="tel:88002015603" class="h4 text-white font-weight-light">8 800 201-56-03</a></div>
                             <div><a href="javascript:;" class="btn btn-primary btn-block" data-toggle="modal" data-target="#callback_modal" >Заказать звонок</a></div>
 
                             @push('modals')
@@ -84,6 +95,10 @@
                 </nav>
 
                 <div class="d-lg-none d-block text-center my-3">
+                    <div class="mb-2 address font-weight-light">
+                        <i class="fas fa-map-marker-alt mr-1"></i> г.Новороссийск, ул. Лейтенанта Шмидта, д.39
+                    </div>
+
                     <div class="mb-2"><a href="tel:89887703002" class="h4 text-white">8(988) 770-30-02</a></div>
                     <div><a href="javascript:;" class="btn btn-primary btn-block" data-toggle="modal" data-target="#callback_modal" >Заказать звонок</a></div>
                 </div>
@@ -120,7 +135,7 @@
 
     </header>
 
-    <section id="zk_block" class="content py-5">
+    <section id="zk_block" class="content pt-5">
         <div class="container">
             <div class="heading text-center mb-5">
                 <div class="title h1 font-weight-bolder mb-3"><span class="pb-2">Жилищные комплексы</span></div>
@@ -229,6 +244,46 @@
                 </div>
             </div>
 
+        </div>
+
+    </section>
+
+    <section id="parth_block" class="content pt-5">
+        <div class="container">
+            <div class="heading text-center mb-5">
+                <div class="title h1 font-weight-bolder mb-3"><span class="pb-2">Наши банки-партнеры</span></div>
+
+                <div class="items d-md-flex justify-content-center">
+                    <div class="item px-3">
+                        <a href="javascript:;" class="parth_img" data-img="/images/theme/sert_parth_1.jpg" title="Официальный партнер - Сбербанк" ><img src="/images/theme/parth1.jpg" alt=""></a>
+                    </div>
+
+                    <div class="item px-3">
+                        <a href="javascript:;" class="parth_img" data-img="/images/theme/sert_parth_2.jpg" title="Официальный партнер - ВТБ" ><img src="/images/theme/parth2.jpg" alt=""></a>
+                    </div>
+                </div>
+
+                @push('modals')
+                    <div class="modal fade" id="parth_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+
+                                <div class="modal-header border-0 pb-0">
+                                    <h5 class="modal-title font-weight-bolder text-center"></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true"><i class="material-icons">clear</i></span>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <img src="" class="parth_image_preview" style="width: 100%;" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endpush
+
+            </div>
         </div>
 
     </section>
@@ -371,7 +426,7 @@
                     <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart1.jpg);"></div>
                     <h5 class="card-title font-weight-bold">12 лет опыта на рынке недвижимости</h5>
                     <div class="desc">
-                        Сотрудники агентства недвижимости Перспектива 23 имеют огромный опыт и ценные навыки на рынке недвижимости
+                        Сотрудники компании имеют огромный опыт и ценные навыки на рынке недвижимости
                     </div>
                 </div>
 
@@ -387,7 +442,7 @@
                     <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart3.jpg);background-position: right;"></div>
                     <h5 class="card-title font-weight-bold">Наши партнеры - ведущие банки России</h5>
                     <div class="desc">
-                        Вы можете получить скидку до 1% в месяц от фиксированной банковской ставки по ипотеке
+                        С нашей помощью Вы получите скидку по ипотечному кредитованию от 0.5%
                     </div>
                 </div>
 
@@ -395,7 +450,7 @@
                     <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart4.jpg);background-position: right;"></div>
                     <h5 class="card-title font-weight-bold">Сеть<br> офисов продаж</h5>
                     <div class="desc">
-                        Мы помогаем приобрести жилье во многих городах России
+                        Наша компания находится в 60 городах России. У нас имеется центр межрегиональных сделок, мы поможем Вам продать или купить недвижимость в любой части страны
                     </div>
                 </div>
 
@@ -407,7 +462,7 @@
     <section id="form_block" class="content py-5">
         <div class="container">
             <div class="heading text-center mb-5">
-                <div class="title h1 mb-3 font-weight-light"><span class="pb-2">Выберите идеальную квартиру вместе с экспертом по новостройкам Новороссийска</span></div>
+                <div class="title h1 mb-3 font-weight-light"><span class="pb-2">Выберите квартиру своей мечты вместе с экспертом по новостройкам Новороссийска</span></div>
                 <div class="desc">Оставьте свой телефон, и мы позвоним, чтобы проконсультировать вас по подобранным вариантам</div>
             </div>
 
@@ -435,7 +490,6 @@
 
             <div class="text-justify">
 
-
             <p>Новороссийском зовется город на юге России, входящий в границы Краснодарского края. В населенном пункте работает стратегически важный морской порт, а также крупная военно-морская база. Располагается город на побережье Цемесской бухты, являющейся своеобразными воротами в Черное море. Климатические условия типичны для южных поселений. Даже зимой столбик термометра не столь часто опускается ниже нулевой отметки, а летом здесь очень жарко, правда, спасает от палящего солнца охлаждающая гладь воды. Также для местных погодных условий характерны периодические ураганные ветра. Экологическая обстановка в локации довольно напряженная, поскольку функционирующие здесь заводы по производству цемента существенно загрязняют местную атмосферу.<br>
                 <br>
                 Число местных жителей с каждым годом увеличивается, причем летом показатель роста населения стремительно идет вверх за счет притока внушительного количества туристов. Также на постоянной основе местность пополняется из-за приехавших сюда мигрантов. Населенный пункт состоит из четырех районов. Самым молодым является Южный район, который начал активно развиваться совсем недавно. Сегодня эта местность просто усеяна новостройками, как вчерашними, так еще не сданными в эксплуатацию. Ценовой диапазон отличается широтой, но в своем большинстве здесь реализуется дорогостоящая недвижимость (Новороссийск вообще обладает завидным сегментом элитного жилья). Кстати, к Южному району относится ряд пляжей города, неподалеку от которого реализуются одни из самых дорогостоящих коттеджей.<br>
@@ -454,30 +508,47 @@
 
     <footer class="py-5">
         <div class="container">
+
             <div class="row">
 
-                <div class="col-lg-6 mb-md-0">
-                    <div class="row">
-                        <div class="col-md-6 mb-md-0 mb-3">
-                            <ul class="list-unstyled text-md-left text-center">
-                                <li><a href="#">Жилые комплексы</a></li>
-                                <li><a href="#">Как мы работаем</a></li>
-                                <li><a href="#">Наши преимущества</a></li>
-                                <li><a href="#">Контакты</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 mb-md-0 text-lg-left text-center mb-3 mb-md-0">
-                            <div class="mb-2"><a href="tel:+79186674224" class="h4 text-white text-primary">+7 (918) 667-42-24</a></div>
-                            <div><a href="javascript:;" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#callback_modal" >Заказать звонок</a></div>
-                        </div>
+                <div class="col-md-5 col-lg-4 mb-md-0 text-center text-md-left">
+                    <div><a class="navbar-brand py-0" href="#"><img src="/images/theme/logo2.png" alt="" width="83" height="75"></a></div>
+                    
+                    <div class="socials mt-3">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="ml-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="ml-2"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
 
-                <div class="col-lg-6">
-                    Вся информация, опубликованная на сайте, носит только информационный характер и не является публичной офертой. Все права защищены. При копировании материалов с сайта гиперссылка обязательна.
+                <div class="col-md-7 col-lg-5 mb-md-0 text-center text-md-left">
+
+                    <div class="mb-2 address font-weight-light">
+
+                        <div class="mb-4 mt-md-0 mt-4">
+                            <a href="tel:88002015603" class="h4 text-white text-primary">8 800 201-56-03</a><br>
+                            <a href="javascript:;" class="" data-toggle="modal" data-target="#callback_modal">Заказать звонок</a>
+                        </div>
+
+                        <ul class="list-unstyled w_icons pt-2">
+                            <li class="d-inline-block d-md-block"><i class="fas fa-map-marker-alt mr-1 fa-sm"></i> г.Новороссийск, ул. Лейтенанта Шмидта, д.39</li>
+                            <li class="d-inline-block d-md-block"><i class="fas fa-clock mr-1 fa-sm"></i> Пн-Пт с 8:00 до 20:00, Сб-Вс с 10:00 до 17:00</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-3 mb-md-0 text-center text-md-left">
+                    <ul class="list-unstyled text-md-left text-center nav-footer font-weight-light footer-nav">
+                        <li><a href="#">Жилые комплексы</a></li>
+                        <li><a href="#">Как мы работаем</a></li>
+                        <li><a href="#">Наши преимущества</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
                 </div>
 
             </div>
+            
         </div>
     </footer>
     <section class="powered py-2">
@@ -487,6 +558,26 @@
     </section>
 
     @stack('modals')
+
+    <div id="whatsapp" data-timeout="12000">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="material-icons">clear</i></span>
+        </button>
+
+        <div class="mt-5">
+            <div class="text-center">
+                <img src="/images/theme/wp.jpg" alt="">
+
+                <div class="h2 my-4">Получайте самые выгодные предложения по недвижимости Новороссийска в Whats App!</div>
+
+                <p class="text-secondary my-3">Вступите в чат, где мы бесплатно присылать подборку с эксклюзивными предложениями по недвижимости
+                    Новороссийска</p>
+
+                <a href="#" class="btn btn-primary btn-lg mt-4">Вступить в чат</a>
+            </div>
+        </div>
+
+    </div>
 
     <script src="{{ asset('js/app.js') }}"></script>
     @stack('js')
