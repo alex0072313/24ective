@@ -340,9 +340,11 @@ footer{
         top:40px;
         right: 40px;
     }
+    overflow-y: auto;
 }
 
 body.show_whatsapp{
+    overflow: hidden;
     @include media-breakpoint-down(md){
         #whatsapp{
             display: block;
