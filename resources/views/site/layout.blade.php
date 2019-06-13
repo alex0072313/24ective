@@ -18,7 +18,7 @@
             <div class="container py-3">
 
                 <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                    <a class="navbar-brand" href="#"><img src="/images/theme/logo.png" alt=""></a>
+                    <a class="navbar-brand" href="#"><img src="/images/theme/logo2.png" alt="" width="83" height="75"></a>
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
