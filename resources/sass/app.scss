@@ -49,11 +49,22 @@ $font-family-sans-serif: 'Roboto', sans-serif;
     border-radius: $border-radius;
 }
 
+.w_icons{
+    li{
+        position: relative;
+        padding-left: 25px;
+        i{
+            position: absolute;
+            left: 0;
+            top: 4px;
+        }
+    }
+}
+
 header{
     position: relative;
     background: url("/images/theme/header_bg.jpg") no-repeat center;
     background-size: cover;
-    background-attachment: fixed;
     min-height: 100vh;
 
     .title{
@@ -70,8 +81,52 @@ header{
                 left: 0;
                 bottom: -5px;
             }
+            @include media-breakpoint-down(sm){
+                font-size: 2.5rem;
+            }
         }
     }
+
+    .navbar-nav{
+        @include media-breakpoint-down(md){
+            li{
+                padding-left: 0;
+                text-align: center;
+            }
+        }
+    }
+
+
+
+    .nav-item{
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+
+        .btn{
+            border: 1px solid transparent;
+            &:hover{
+                background: transparent;
+                color: $white;
+                border-color: $white;
+            }
+        }
+
+        &.active{
+            .btn{
+                border-color: $white;
+            }
+        }
+    }
+
+    .address{
+        color: rgba(255, 255, 255, 0.5);
+        padding-left: .75rem;
+        @include media-breakpoint-down(md){
+            color: $white;
+        }
+    }
+
+
     .to_zk{
         position: absolute;
         bottom: 0;
@@ -163,21 +218,28 @@ header{
     }
 
     .items{
-        .item{
-            text-align: center;
-            .h{
-                span{
-                    width: 50px;
-                    height: 50px;
-                    display: inline-block;
-                    font-size: 52px;
-                    line-height: 50px;
-                    border-radius: 100%;
-                    border: 1px solid $white;
-                    i{
-                        margin-top: 13px;
-                        display: block;
-                    }
+        text-align: center;
+        .item {
+            @extend .mb-4;
+            width: 270px;
+            display: inline-block;
+
+            .img{
+                width: 255px;
+                height: 255px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 100%;
+                overflow: hidden;
+
+                @include media-breakpoint-down(lg){
+                    width: 210px;
+                    height: 210px;
+                }
+                @include media-breakpoint-down(md){
+                    width: 255px;
+                    height: 255px;
                 }
             }
         }
@@ -189,6 +251,13 @@ header{
             position: absolute;
             top: 12px;
             left: 15px;
+        }
+    }
+}
+
+#parth_block{
+    .items{
+        .item{
         }
     }
 }
@@ -215,7 +284,6 @@ header{
                     width: 255px;
                     height: 255px;
                 }
-
             }
         }
     }
@@ -229,11 +297,76 @@ header{
 footer{
     color: $white;
     background: $gray-700;
+    .socials{
+        a{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 100%;
+            color: $white;
+            &.vk{
+                background: #4F75A3;
+            }
+            &.fb{
+                background: #495A96;
+            }
+            &.in{
+                background: #947F5B;
+            }
+
+            &:hover{
+                background: $green;
+                color: $white;
+            }
+        }
+    }
+    .footer-nav{
+        @include media-breakpoint-down(lg){
+            width: 100%;
+            margin-bottom: 0;
+            li{
+                display: inline-block;
+                margin-right: 11px;
+            }
+        }
+        @include media-breakpoint-down(sm){
+            li{
+                display: block;
+                margin-right: 0;
+            }
+        }
+    }
 }
 .powered{
     background: $gray-900;
 }
 
+#whatsapp{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $white;
+    .close{
+        position: absolute;
+        top:40px;
+        right: 40px;
+    }
+    overflow-y: auto;
+}
+
+body.show_whatsapp{
+    @include media-breakpoint-down(sm){
+        overflow: hidden;
+        #whatsapp{
+            display: block;
+        }
+    }
+}
 
 //Home
 
