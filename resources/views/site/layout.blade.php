@@ -18,7 +18,7 @@
             <div class="container py-3">
 
                 <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                    <a class="navbar-brand py-0" href="#"><img src="/images/theme/logo2.png" alt="" width="83" height="75"></a>
+                    <a class="navbar-brand py-0" href="#"><img src="/images/theme/logo3.png" alt="" width="83" height="75"></a>
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -127,15 +127,125 @@
             </div>
         </div>
 
-        <div class="to_zk">
-            <div class="container text-center">
-                <a href="#" onclick="scroll_to_el('#zk_block', 500);" class="btn btn-lg"><i class="fas fa-angle-double-down mr-2 fa-sm"></i> Выбрать ЖК</a>
-            </div>
-        </div>
+        {{--<div class="to_zk">--}}
+            {{--<div class="container text-center">--}}
+                {{--<a href="#" onclick="scroll_to_el('#zk_block', 500);" class="btn btn-lg"><i class="fas fa-angle-double-down mr-2 fa-sm"></i> Выбрать ЖК</a>--}}
+            {{--</div>--}}
+        {{--</div>--}}
 
     </header>
 
-    <section id="zk_block" class="content pt-5">
+    <section id="parth_block" class="content py-5">
+        <div class="container">
+            <div class="heading text-center mb-5">
+                <div class="title h1 font-weight-bolder mb-3"><span class="pb-2">Наши банки-партнеры</span></div>
+
+                <div class="items row">
+                    <div class="item col-sm-6 col-lg-4">
+                        <a href="javascript:;" class="parth_img" data-img="/images/theme/sert_parth_1.jpg" title="Официальный партнер - Сбербанк" ><img src="/images/theme/parth1.jpg" alt=""></a>
+                    </div>
+
+                    <div class="item col-sm-6 col-lg-4">
+                        <a href="javascript:;" class="parth_img" data-img="/images/theme/sert_parth_2.jpg" title="Официальный партнер - ВТБ" ><img src="/images/theme/parth2.jpg" alt=""></a>
+                    </div>
+
+                    <div class="item col-sm-6 col-lg-4">
+                        <a href="javascript:;" ><img src="/images/theme/parth3.jpg" alt=""></a>
+                    </div>
+
+                    <div class="item col-sm-6 col-lg-4">
+                        <a href="javascript:;" ><img src="/images/theme/parth4.jpg" alt=""></a>
+                    </div>
+
+                    <div class="item col-sm-6 col-lg-4">
+                        <a href="javascript:;" ><img src="/images/theme/parth5.jpg" alt=""></a>
+                    </div>
+
+                    <div class="item col-sm-6 col-lg-4">
+                        <a href="javascript:;" ><img src="/images/theme/parth6.jpg" alt=""></a>
+                    </div>
+
+                    <div class="item col-sm-6 col-lg-4 offset-lg-4 offset-sm-3">
+                        <a href="javascript:;" ><img src="/images/theme/parth7.jpg" alt=""></a>
+                    </div>
+                </div>
+
+                @push('modals')
+                    <div class="modal fade" id="parth_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+
+                                <div class="modal-header border-0 pb-0">
+                                    <h5 class="modal-title font-weight-bolder text-center"></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true"><i class="material-icons">clear</i></span>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <img src="" class="parth_image_preview" style="width: 100%;" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endpush
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="apparts_block" class="content py-5">
+        <div class="container">
+
+            <div class="heading text-center mb-5">
+                <div class="title h1 font-weight-bolder mb-3"><span class="pb-2">Наши преимущества</span></div>
+                <div class="desc">
+                    12 лет на рынке
+                </div>
+            </div>
+
+            <div class="items row mb-5">
+
+                <div class="item col-sm-6 col-lg-3 mb-4">
+                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart1.jpg);"></div>
+                    <h5 class="card-title font-weight-bold">12 лет опыта на рынке недвижимости</h5>
+                    <div class="desc">
+                        Сотрудники компании имеют огромный опыт и ценные навыки на рынке недвижимости
+                    </div>
+                </div>
+
+                <div class="item col-sm-6 col-lg-3 mb-4">
+                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart2.jpg);"></div>
+                    <h5 class="card-title font-weight-bold">Обширный каталог недвижимости</h5>
+                    <div class="desc">
+                        Самая большая база недвижимости и эксклюзивные ценовые условия от застройщиков
+                    </div>
+                </div>
+
+                <div class="item col-sm-6 col-lg-3 mb-4">
+                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart3.jpg);background-position: right;"></div>
+                    <h5 class="card-title font-weight-bold">Наши партнеры - ведущие банки России</h5>
+                    <div class="desc">
+                        С нашей помощью Вы получите скидку по ипотечному кредитованию от 0.5%
+                    </div>
+                </div>
+
+                <div class="item col-sm-6 col-lg-3 mb-4">
+                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart4.jpg);background-position: right;"></div>
+                    <h5 class="card-title font-weight-bold">Сеть<br> офисов продаж</h5>
+                    <div class="desc">
+                        Наша компания находится в 60 городах России. У нас имеется центр межрегиональных сделок, мы поможем Вам продать или купить недвижимость в любой части страны
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="zk_block" class="content py-5">
         <div class="container">
             <div class="heading text-center mb-5">
                 <div class="title h1 font-weight-bolder mb-3"><span class="pb-2">Жилищные комплексы</span></div>
@@ -248,46 +358,6 @@
 
     </section>
 
-    <section id="parth_block" class="content pt-5">
-        <div class="container">
-            <div class="heading text-center mb-5">
-                <div class="title h1 font-weight-bolder mb-3"><span class="pb-2">Наши банки-партнеры</span></div>
-
-                <div class="items d-md-flex justify-content-center">
-                    <div class="item px-3">
-                        <a href="javascript:;" class="parth_img" data-img="/images/theme/sert_parth_1.jpg" title="Официальный партнер - Сбербанк" ><img src="/images/theme/parth1.jpg" alt=""></a>
-                    </div>
-
-                    <div class="item px-3">
-                        <a href="javascript:;" class="parth_img" data-img="/images/theme/sert_parth_2.jpg" title="Официальный партнер - ВТБ" ><img src="/images/theme/parth2.jpg" alt=""></a>
-                    </div>
-                </div>
-
-                @push('modals')
-                    <div class="modal fade" id="parth_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl">
-                            <div class="modal-content">
-
-                                <div class="modal-header border-0 pb-0">
-                                    <h5 class="modal-title font-weight-bolder text-center"></h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true"><i class="material-icons">clear</i></span>
-                                    </button>
-                                </div>
-
-                                <div class="modal-body">
-                                    <img src="" class="parth_image_preview" style="width: 100%;" >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                @endpush
-
-            </div>
-        </div>
-
-    </section>
-
     <section id="work_block" class="content py-5">
         <div class="container">
 
@@ -300,70 +370,55 @@
 
             <div class="items row">
 
-                <div class="item col-sm-6 col-lg-4 mb-4">
-                    <div class="h mb-2">
-                        <span>
-                            <i class="material-icons">
-                                send
-                            </i>
-                        </span>
+
+                <div class="item col-sm-6 col-lg-3 mb-4">
+                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/work1.jpg);"></div>
+                    <div class="desc">
+                        1. Вы оставляете заявку на консультацию
                     </div>
-                    <div class="desc">1. Вы оставляете заявку на консультацию</div>
                 </div>
 
-                <div class="item col-sm-6 col-lg-4 mb-4">
-                    <div class="h mb-2">
-                        <span>
-                            <i class="material-icons">
-                                face
-                            </i>
-                        </span>
+                <div class="item col-sm-6 col-lg-3 mb-4">
+                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/work1.jpg);"></div>
+                    <div class="desc">
+                        2. Наш эксперт связывается с Вами по телефону и консультирует
                     </div>
-                    <div class="desc">2. Наш эксперт связывается с Вами по телефону и консультирует</div>
                 </div>
 
-                <div class="item col-sm-6 col-lg-4 mb-4">
-                    <div class="h mb-2">
-                        <span>
-                            <i class="material-icons">
-                                directions_car
-                            </i>
-                        </span>
+                <div class="item col-sm-6 col-lg-3 mb-4">
+                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/work1.jpg);"></div>
+                    <div class="desc">
+                        {{--3. Если у Вас сделка проходит по ипотеке, то мы самостоятельно подадим заявку - без очередей в банке, поможем в принятии банком положительного решения и предоставим скидку по ипотеке--}}
+                        3. Если у Вас ипотека, то мы самостоятельно подадим заявку
                     </div>
-                    <div class="desc">3. Вместе с нашим специалистом едете смотреть подходящие варианты</div>
                 </div>
 
-                <div class="item col-sm-6 col-lg-4 mb-4">
-                    <div class="h mb-2">
-                        <span>
-                            <i class="material-icons">
-                                assignment_turned_in
-                            </i>
-                        </span>
+                <div class="item col-sm-6 col-lg-3 mb-4">
+                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/work1.jpg);"></div>
+                    <div class="desc">
+                        4. Вместе с нашим экспертом едете смотреть подходящие варианты
                     </div>
-                    <div class="desc">4. Оформляем необходимые документы для покупки</div>
                 </div>
 
-                <div class="item col-sm-6 col-lg-4 mb-4">
-                    <div class="h mb-2">
-                        <span>
-                            <i class="material-icons">
-                                format_paint
-                            </i>
-                        </span>
+                <div class="item col-sm-6 col-lg-3 mb-4">
+                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/work1.jpg);"></div>
+                    <div class="desc">
+                        5. Оформляем необходимые документы для покупки
                     </div>
-                    <div class="desc">5. Мы помогаем произвести ремонт, от дизайна до мебели</div>
                 </div>
 
-                <div class="item col-sm-6 col-lg-4 mb-4">
-                    <div class="h mb-2">
-                        <span>
-                            <i class="material-icons">
-                                vpn_key
-                            </i>
-                        </span>
+                <div class="item col-sm-6 col-lg-3 mb-4">
+                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/work1.jpg);"></div>
+                    <div class="desc">
+                        6. Мы помогаем произвести ремонт, от дизайна до мебели
                     </div>
-                    <div class="desc">6. Квартира полнотстью готова для проживания</div>
+                </div>
+
+                <div class="item col-sm-6 col-lg-3 mb-4">
+                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/work1.jpg);"></div>
+                    <div class="desc">
+                        7. Квартира полнотстью готова для проживания
+                    </div>
                 </div>
 
             </div>
@@ -410,54 +465,7 @@
         </div>
     </section>
 
-    <section id="apparts_block" class="content py-5">
-        <div class="container">
 
-            <div class="heading text-center mb-5">
-                <div class="title h1 font-weight-bolder mb-3"><span class="pb-2">Наши преимущества</span></div>
-                <div class="desc">
-                    12 лет на рынке
-                </div>
-            </div>
-
-            <div class="items row mb-5">
-
-                <div class="item col-sm-6 col-lg-3 mb-4">
-                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart1.jpg);"></div>
-                    <h5 class="card-title font-weight-bold">12 лет опыта на рынке недвижимости</h5>
-                    <div class="desc">
-                        Сотрудники компании имеют огромный опыт и ценные навыки на рынке недвижимости
-                    </div>
-                </div>
-
-                <div class="item col-sm-6 col-lg-3 mb-4">
-                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart2.jpg);"></div>
-                    <h5 class="card-title font-weight-bold">Обширный каталог недвижимости</h5>
-                    <div class="desc">
-                        Самая большая база недвижимости и эксклюзивные ценовые условия от застройщиков
-                    </div>
-                </div>
-
-                <div class="item col-sm-6 col-lg-3 mb-4">
-                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart3.jpg);background-position: right;"></div>
-                    <h5 class="card-title font-weight-bold">Наши партнеры - ведущие банки России</h5>
-                    <div class="desc">
-                        С нашей помощью Вы получите скидку по ипотечному кредитованию от 0.5%
-                    </div>
-                </div>
-
-                <div class="item col-sm-6 col-lg-3 mb-4">
-                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart4.jpg);background-position: right;"></div>
-                    <h5 class="card-title font-weight-bold">Сеть<br> офисов продаж</h5>
-                    <div class="desc">
-                        Наша компания находится в 60 городах России. У нас имеется центр межрегиональных сделок, мы поможем Вам продать или купить недвижимость в любой части страны
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
 
     <section id="form_block" class="content py-5">
         <div class="container">
@@ -489,19 +497,11 @@
             </div>
 
             <div class="text-justify">
-
-            <p>Новороссийском зовется город на юге России, входящий в границы Краснодарского края. В населенном пункте работает стратегически важный морской порт, а также крупная военно-морская база. Располагается город на побережье Цемесской бухты, являющейся своеобразными воротами в Черное море. Климатические условия типичны для южных поселений. Даже зимой столбик термометра не столь часто опускается ниже нулевой отметки, а летом здесь очень жарко, правда, спасает от палящего солнца охлаждающая гладь воды. Также для местных погодных условий характерны периодические ураганные ветра. Экологическая обстановка в локации довольно напряженная, поскольку функционирующие здесь заводы по производству цемента существенно загрязняют местную атмосферу.<br>
-                <br>
-                Число местных жителей с каждым годом увеличивается, причем летом показатель роста населения стремительно идет вверх за счет притока внушительного количества туристов. Также на постоянной основе местность пополняется из-за приехавших сюда мигрантов. Населенный пункт состоит из четырех районов. Самым молодым является Южный район, который начал активно развиваться совсем недавно. Сегодня эта местность просто усеяна новостройками, как вчерашними, так еще не сданными в эксплуатацию. Ценовой диапазон отличается широтой, но в своем большинстве здесь реализуется дорогостоящая недвижимость (Новороссийск вообще обладает завидным сегментом элитного жилья). Кстати, к Южному району относится ряд пляжей города, неподалеку от которого реализуются одни из самых дорогостоящих коттеджей.<br>
-                <br>
-                <b>Восточный район</b> – сосредоточие промышленных предприятий. Практически на береговой линии работают судоремонтные объекты и другие промышленные предприятия. Естественно, экология здесь самая незавидная, поэтому за дешевой недвижимостью в Новороссийске отправляются сюда. <br>
-                <br>
-                <b>Центральный район</b> считается самым облагороженным. Здесь построены все основные культурно-развлекательные объекты и офисные помещения. Жилплощадь в своем большинстве дорогая, но довольно вариативная. Встречаются частные домовладения, ветхие советские мало- и среднеэтажки, а также современные корпуса. <br>
-                <br>
-                Средним по стоимости жильем располагает Приморский район, где можно приобрести частный дом или квартиру в строящемся ЖК. Жить в этой локации комфортно – здесь спокойнее и чище, чем в центре и на юге.</p>
-
-            <p>Как и сайты объявлений недвижимости Циан, Авито и Домофонд. Новороссийск на Рестейте
-                можно купить и снять квартиру и офис, дом и участок, продать и сдать в аренду. Подайте объявление бесплатно как частное лицо (собственник), или как риэлтор на порталы в Городском округе Новороссийск  AVITO и Яндекс.Недвижимость</p>
+                <p>Новороссийском зовется город на юге России, входящий в границы Краснодарского края. В населенном пункте работает стратегически важный морской порт, а также крупная военно-морская база. Располагается город на побережье Цемесской бухты, являющейся своеобразными воротами в Черное море. Климатические условия типичны для южных поселений. Даже зимой столбик термометра не столь часто опускается ниже нулевой отметки, а летом здесь очень жарко, правда, спасает от палящего солнца охлаждающая гладь воды.</p>
+                <p>Число местных жителей с каждым годом увеличивается, причем летом показатель роста населения стремительно идет вверх за счет притока внушительного количества туристов. Населенный пункт состоит из четырех районов. Самым молодым является Южный район, который начал активно развиваться совсем недавно. Сегодня эта местность просто усеяна новостройками, как вчерашними, так и еще не сданными в эксплуатацию.  Кстати, к Южному району относится ряд пляжей города.</p>
+                <p>Восточный район – сосредоточие промышленных предприятий. Практически на береговой линии работают судоремонтные объекты и другие промышленные предприятия. В этом районе более низкие цены на недвижимость.</p>
+                <p>Центральный район – считается самым облагороженным. Здесь построены все основные культурно-развлекательные объекты и офисные помещения, в шаговой доступности городская набережная и центральный городской пляж.</p>
+                <p>Средним по стоимости жильем располагает Приморский район, где можно приобрести частный дом или квартиру в новом жилом комплексе, так же есть хороший выбор вторичного жилья.</p>
             </div>
         </div>
     </section>
@@ -512,12 +512,12 @@
             <div class="row">
 
                 <div class="col-md-5 col-lg-4 mb-md-0 text-center text-md-left">
-                    <div><a class="navbar-brand py-0" href="#"><img src="/images/theme/logo2.png" alt="" width="83" height="75"></a></div>
+                    <div><a class="navbar-brand py-0" href="#"><img src="/images/theme/logo3.png" alt="" width="83" height="75"></a></div>
                     
                     <div class="socials mt-3">
-                        <a href="#"><i class="fab fa-vk"></i></a>
-                        <a href="#" class="ml-2"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="ml-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="vk"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="ml-2 fb"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="ml-2 in"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
 

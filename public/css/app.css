@@ -10844,19 +10844,28 @@ header .to_zk a {
   text-align: center;
 }
 
-#work_block .items .item .h span {
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  font-size: 52px;
-  line-height: 50px;
+#work_block .items .item .img {
+  width: 255px;
+  height: 255px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border-radius: 100%;
-  border: 1px solid #fff;
+  overflow: hidden;
 }
 
-#work_block .items .item .h span i {
-  margin-top: 13px;
-  display: block;
+@media (max-width: 1199.98px) {
+  #work_block .items .item .img {
+    width: 210px;
+    height: 210px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #work_block .items .item .img {
+    width: 255px;
+    height: 255px;
+  }
 }
 
 #work_block .work_block_btn {
@@ -10919,7 +10928,19 @@ footer .socials a {
   line-height: 40px;
   text-align: center;
   border-radius: 100%;
-  border: 2px solid #75B518;
+  color: #fff;
+}
+
+footer .socials a.vk {
+  background: #4F75A3;
+}
+
+footer .socials a.fb {
+  background: #495A96;
+}
+
+footer .socials a.in {
+  background: #947F5B;
 }
 
 footer .socials a:hover {
@@ -10958,6 +10979,7 @@ footer .socials a:hover {
   left: 0;
   right: 0;
   background: #fff;
+  overflow-y: auto;
 }
 
 #whatsapp .close {
@@ -10967,6 +10989,10 @@ footer .socials a:hover {
 }
 
 @media (max-width: 991.98px) {
+  body.show_whatsapp {
+    overflow: hidden;
+  }
+
   body.show_whatsapp #whatsapp {
     display: block;
   }
