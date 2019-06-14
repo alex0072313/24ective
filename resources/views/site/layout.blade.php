@@ -18,7 +18,7 @@
             <div class="container py-3">
 
                 <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                    <a class="navbar-brand py-0" href="#"><img src="/images/theme/logo3.png" alt="" width="83" height="75"></a>
+                    <a class="navbar-brand py-0" href="#"><img src="/images/theme/logo4.png" alt="" width="83" height="75"></a>
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -596,7 +596,7 @@
             <div class="row">
 
                 <div class="col-md-5 col-lg-4 mb-md-0 text-center text-md-left">
-                    <div><a class="navbar-brand py-0 m-0" href="#"><img src="/images/theme/logo3.png" alt="" width="83" height="75"></a></div>
+                    <div><a class="navbar-brand py-0 m-0" href="#"><img src="/images/theme/logo4.png" alt="" width="83" height="75"></a></div>
                     
                     <div class="socials mt-3">
                         <a href="#" class="vk"><i class="fab fa-vk"></i></a>

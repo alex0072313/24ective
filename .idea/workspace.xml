@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e888ea6b-1d2c-45a1-881e-a65aa582e5fc" name="Default Changelist" comment="Merge branch 'master' of https://github.com/alex0072313/24ective&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <change afterPath="$PROJECT_DIR$/public/images/theme/appart5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/theme/appart6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/theme/appart7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/theme/appart8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="e888ea6b-1d2c-45a1-881e-a65aa582e5fc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/theme/logo4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/theme/appart1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/theme/appart1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/theme/appart2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/theme/appart2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/theme/appart3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/theme/appart3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/theme/appart4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/theme/appart4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/site/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/layout.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/site/layout.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="640" column="14" lean-forward="true" selection-start-line="640" selection-start-column="14" selection-end-line="640" selection-end-column="14" />
+            <state relative-caret-position="107">
+              <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
               <folding>
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
@@ -78,15 +68,6 @@
                 <element signature="n#style#0;n#div#0;n#div#5;n#div#1;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#6;n#div#1;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -134,8 +115,8 @@
         <option value="$PROJECT_DIR$/resources/sass/_vars.scss" />
         <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/resources/sass/app.scss" />
-        <option value="$PROJECT_DIR$/resources/views/site/layout.blade.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/resources/views/site/layout.blade.php" />
       </list>
     </option>
   </component>
@@ -225,9 +206,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="746" />
-    <option name="y" value="17" />
-    <option name="width" value="974" />
+    <option name="x" value="492" />
+    <option name="y" value="11" />
+    <option name="width" value="1321" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -244,6 +225,24 @@
             <path>
               <item name="24ective" type="b2602c69:ProjectViewProjectNode" />
               <item name="24ective" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="24ective" type="b2602c69:ProjectViewProjectNode" />
+              <item name="24ective" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="24ective" type="b2602c69:ProjectViewProjectNode" />
+              <item name="24ective" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="24ective" type="b2602c69:ProjectViewProjectNode" />
+              <item name="24ective" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="theme" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -316,11 +315,25 @@
       <option name="project" value="LOCAL" />
       <updated>1560499536364</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Merge branch 'master' of https://github.com/alex0072313/24ective&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1560503546727</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560503546727</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Merge branch 'master' of https://github.com/alex0072313/24ective&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1560514142637</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560514142637</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29477000" />
+    <option name="totallyTimeSpent" value="31788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -341,7 +354,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3761062" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.19469027" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.47709498" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -454,10 +467,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/site/layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="640" column="14" lean-forward="true" selection-start-line="640" selection-start-column="14" selection-end-line="640" selection-end-column="14" />
+        <state relative-caret-position="107">
+          <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
           <folding>
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
@@ -477,13 +497,6 @@
             <element signature="n#style#0;n#div#0;n#div#5;n#div#1;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#6;n#div#1;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
         </state>
       </provider>
     </entry>
