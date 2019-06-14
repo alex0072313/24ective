@@ -99,7 +99,7 @@
                         <i class="fas fa-map-marker-alt mr-1"></i> г.Новороссийск, ул. Лейтенанта Шмидта, д.39
                     </div>
 
-                    <div class="mb-2"><a href="tel:89887703002" class="h4 text-white">8(988) 770-30-02</a></div>
+                    <div class="mb-2"><a href="tel:88002015603" class="h4 text-white">8 800 201-56-03</a></div>
                     <div><a href="javascript:;" class="btn btn-primary btn-block" data-toggle="modal" data-target="#callback_modal" >Заказать звонок</a></div>
                 </div>
 
