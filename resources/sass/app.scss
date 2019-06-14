@@ -203,6 +203,25 @@ header{
     }
 }
 
+#sale_block{
+    color: $white;
+    background: $blue;
+
+    .heading{
+        .title{
+            span{
+                &:after{
+                    background: transparent;
+                }
+            }
+        }
+    }
+
+
+
+
+}
+
 #work_block{
     color: $white;
     background: $green;

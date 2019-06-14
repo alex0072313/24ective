@@ -10832,6 +10832,15 @@ header .to_zk a {
   margin-top: 6px;
 }
 
+#sale_block {
+  color: #fff;
+  background: #1C93D1;
+}
+
+#sale_block .heading .title span:after {
+  background: transparent;
+}
+
 #work_block {
   color: #fff;
   background: #75B518;

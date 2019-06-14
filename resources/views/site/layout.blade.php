@@ -201,7 +201,7 @@
             <div class="heading text-center mb-5">
                 <div class="title h1 font-weight-bolder mb-3"><span class="pb-2">Наши преимущества</span></div>
                 <div class="desc">
-                    12 лет на рынке
+                    Более 10 лет на рынке
                 </div>
             </div>
 
@@ -209,37 +209,121 @@
 
                 <div class="item col-sm-6 col-lg-3 mb-4">
                     <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart1.jpg);"></div>
-                    <h5 class="card-title font-weight-bold">12 лет опыта на рынке недвижимости</h5>
+                    <h5 class="card-title font-weight-bold">Индивидуальный подход</h5>
                     <div class="desc">
-                        Сотрудники компании имеют огромный опыт и ценные навыки на рынке недвижимости
+                        Наша задача не продать то, что есть, а подобрать наиболее подходящий для вас вариант.
                     </div>
                 </div>
 
                 <div class="item col-sm-6 col-lg-3 mb-4">
                     <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart2.jpg);"></div>
+                    <h5 class="card-title font-weight-bold">Экспертность</h5>
+                    <div class="desc">
+                        Мы знаем плюсы и так же минусы каждой стройки и расскажем вам об этом.
+                    </div>
+                </div>
+
+                <div class="item col-sm-6 col-lg-3 mb-4">
+                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart3.jpg);"></div>
+                    <h5 class="card-title font-weight-bold">Надежные застройщики</h5>
+                    <div class="desc">
+{{--                        Мы работаем только с проверенными застройщиками, с застройщиками, которые зарекомендовали себя на рынке, у которых уже десятки и сотни тысяч квадратных метров построеных и введенных в эксплуатацию домов.--}}
+                        Мы работаем только с проверенными застройщиками, которые зарекомендовали себя.
+                    </div>
+                </div>
+
+                <div class="item col-sm-6 col-lg-3 mb-4">
+                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart4.jpg);"></div>
+                    <h5 class="card-title font-weight-bold">Более 10 лет на рынке {{-- недвижимости --}}</h5>
+                    <div class="desc">
+                        Сотрудники нашей компании имеют огромный опыт и ценные навыки на рынке недвижимости.
+                    </div>
+                </div>
+
+                <div class="item col-sm-6 col-lg-3 mb-4">
+                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart5.jpg);"></div>
                     <h5 class="card-title font-weight-bold">Обширный каталог недвижимости</h5>
                     <div class="desc">
-                        Самая большая база недвижимости и эксклюзивные ценовые условия от застройщиков
+                        Самая большая база новостроек и эксклюзивные ценовые условия от застройщиков.
                     </div>
                 </div>
 
                 <div class="item col-sm-6 col-lg-3 mb-4">
-                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart3.jpg);background-position: right;"></div>
-                    <h5 class="card-title font-weight-bold">Наши партнеры - ведущие банки России</h5>
+                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart6.jpg);"></div>
+                    <h5 class="card-title font-weight-bold">Партнеры – ведущие банки России</h5>
                     <div class="desc">
-                        С нашей помощью Вы получите скидку по ипотечному кредитованию от 0.5%
+                        С нашей помощью Вы получите скидку по ипотечному кредитованию от 0.5%.
                     </div>
                 </div>
 
                 <div class="item col-sm-6 col-lg-3 mb-4">
-                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart4.jpg);background-position: right;"></div>
-                    <h5 class="card-title font-weight-bold">Сеть<br> офисов продаж</h5>
+                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart7.jpg);"></div>
+                    <h5 class="card-title font-weight-bold">Сеть офисов продаж</h5>
                     <div class="desc">
-                        Наша компания находится в 60 городах России. У нас имеется центр межрегиональных сделок, мы поможем Вам продать или купить недвижимость в любой части страны
+                        Наша компания находится в 60 городах россии. У нас работает центр межрегиональных сделок, мы поможем вам продать или купить недвижимость в любой точке страны.
+                    </div>
+                </div>
+
+                <div class="item col-sm-6 col-lg-3 mb-4">
+                    <div class="img mx-auto mb-3" style="background-image: url(/images/theme/appart8.jpg);"></div>
+                    <h5 class="card-title font-weight-bold">Ваша выгода</h5>
+                    <div class="desc">
+                        С нашей помощью вы сможете сэкономить на покупке квартиры в новостройке, как минимум 700 000 – 800 000 рублей.
                     </div>
                 </div>
 
             </div>
+
+        </div>
+    </section>
+
+    <section id="sale_block" class="content py-5">
+        <div class="container">
+
+            <div class="heading text-center mb-5">
+                <div class="title h1 font-weight-light mb-3"><span class="pb-2">Сэкономьте от 700 000 – 800 000 рублей на покупке квартиры</span></div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <ul class="list-unstyled w_icons">
+                        <li><i class="fas fa-check text-primary"></i> Мы знаем у кого из застройщиков более доступные цены, а качество строительства не отличается от всех – это экономия от 250 000 рублей.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="list-unstyled w_icons">
+                        <li><i class="fas fa-check text-primary"></i> Мы занем, у какого застройщика проходят акции в настоящее время, и предоставим вам информацию – это экономия от 300 000 рублей.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="list-unstyled w_icons">
+                        <li><i class="fas fa-check text-primary"></i> У нас вы можете оформить ипотеку со скидкой от 0,5% - это экономия от 200 000 рублей.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="list-unstyled w_icons">
+                        <li><i class="fas fa-check text-primary"></i> Наш официальный партнер страховой дом «ВСК», и нам предоставляются скидки по страхованию заемщиков при ипотечном кредитовании.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="form mt-5">
+
+                <div class="form-row">
+                    <div class="col-md-4 mb-md-0 mb-3">
+                        <input type="text" class="form-control form-control-lg" placeholder="Ваше Имя">
+                    </div>
+                    <div class="col-md-4 mb-md-0 mb-3">
+                        <input type="text" class="form-control form-control-lg phone-mask" id="phone-mask-3" placeholder="Ваш Телефон">
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-block btn-primary btn-lg">Отправить заявку</button>
+                    </div>
+                </div>
+            </div>
+
+
 
         </div>
     </section>
@@ -564,7 +648,7 @@
             <span aria-hidden="true"><i class="material-icons">clear</i></span>
         </button>
 
-        <div class="mt-5">
+        <div class="mt-5 px-3">
             <div class="text-center">
                 <img src="/images/theme/wp.jpg" alt="">
 
