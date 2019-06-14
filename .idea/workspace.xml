@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e888ea6b-1d2c-45a1-881e-a65aa582e5fc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/theme/work2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/theme/work3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/theme/work4.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/layout.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/site/layout.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="394" lean-forward="true" selection-start-line="394" selection-end-line="394" />
+            <state relative-caret-position="180">
+              <caret line="383" column="85" lean-forward="true" selection-start-line="383" selection-start-column="85" selection-end-line="383" selection-end-column="85" />
               <folding>
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -95,8 +95,8 @@
       <find>getwhatsapp</find>
       <find>mb-2 address font-weight-light</find>
       <find>close</find>
-      <find>zk_block</find>
       <find>apparts_block</find>
+      <find>zk_block</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -318,7 +318,7 @@
       <workItem from="1560190117000" duration="17165000" />
       <workItem from="1560397459008" duration="6387000" />
       <workItem from="1560440258698" duration="10345000" />
-      <workItem from="1560487239783" duration="3400000" />
+      <workItem from="1560487239783" duration="3795000" />
     </task>
     <task id="LOCAL-00001" summary="*">
       <created>1560402692576</created>
@@ -348,11 +348,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560450070569</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="*">
+      <created>1560490687877</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560490687877</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37297000" />
+    <option name="totallyTimeSpent" value="37692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -373,7 +380,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32964602" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2931416" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.2931416" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -490,8 +497,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/site/layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="394" lean-forward="true" selection-start-line="394" selection-end-line="394" />
+        <state relative-caret-position="180">
+          <caret line="383" column="85" lean-forward="true" selection-start-line="383" selection-start-column="85" selection-end-line="383" selection-end-column="85" />
           <folding>
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
