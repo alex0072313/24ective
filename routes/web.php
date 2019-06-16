@@ -13,4 +13,6 @@
 
 Route::get('/', 'HomeController@index');
 
+Route::get('/{zk}', 'zkController@index');
+
 Auth::routes();
