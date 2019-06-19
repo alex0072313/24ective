@@ -5,6 +5,7 @@ $font-family-sans-serif: 'Roboto', sans-serif;
 
 @import "vars";
 @import "~bootstrap/scss/bootstrap";
+@import "~lightbox2/dist/css/lightbox.min.css";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 
@@ -18,6 +19,13 @@ $font-family-sans-serif: 'Roboto', sans-serif;
     url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
     url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
     url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+@mixin animate($time:.1s) {
+    -webkit-transition: $time ease-out;
+    -o-transition: $time ease-out;
+    -moz-transition: $time ease-out;
+    transition: $time ease-out;
 }
 
 .material-icons {
@@ -66,6 +74,22 @@ header{
     background: url("/images/theme/header_bg.jpg") no-repeat center;
     background-size: cover;
     min-height: 100vh;
+
+    & > div{
+        z-index: 100;
+    }
+
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        background: $blue;
+        opacity: .7;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left: 0;
+    }
 
     .title{
         span{
@@ -137,6 +161,13 @@ header{
             background: $white;
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
+        }
+    }
+    .form-zk-header{
+        background: rgba(255,255,255,.7);
+        border-radius: $border-radius;
+        .h4{
+
         }
     }
 }
@@ -364,7 +395,7 @@ footer{
 
 #whatsapp{
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -387,8 +418,128 @@ body.show_whatsapp{
     }
 }
 
-//Home
+#plain_block{
+    .items{
+        .item{
+            .inner{
+                @include animate();
+                position: relative;
+                overflow: hidden;
+                & > a{
+                    display: block;
+                    padding: 1.25rem;
+                    color: inherit;
+                    text-decoration: none;
+                }
+                background: $white;
+                border-radius: $border-radius;
+                border: 1px solid $gray-200;
 
-//Complex
+                .img{
+                    width: 100%;
+                    height: 250px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+                .price{
+                    color: $green;
+                }
+                .more{
+                    @include animate();
+                    opacity: 0;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top:0;
+                    left: 0;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background: $blue;
+                        opacity: .7;
+                    }
+                    .label{
+                        i{
+                            font-size: 50px;
+                        }
+                        color: $white;
+                        z-index: 100;
+                    }
 
-//Contacts
+                }
+                &:hover{
+                    border-color: transparent;
+                    .more{
+                        opacity: 1;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+#gallery_block{
+
+    color: $white;
+    background: $green;
+
+    .heading{
+        .title{
+            span{
+                &:after{
+                    background: $white;
+                }
+            }
+        }
+    }
+
+    .items{
+        text-align: center;
+        .item {
+            @extend .mb-4;
+            display: inline-block;
+            width: 270px;
+            .img{
+                width: 255px;
+                height: 255px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 100%;
+                overflow: hidden;
+
+                @include media-breakpoint-down(lg){
+                    width: 210px;
+                    height: 210px;
+                }
+                @include media-breakpoint-down(md){
+                    width: 255px;
+                    height: 255px;
+                }
+            }
+        }
+    }
+}
+
+#zk_apparts_block{
+    .items{
+        .item{
+            .img{
+                min-height: 255px;
+                //border-radius: $border-radius;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+#worker_block{
+
+}

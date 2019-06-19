@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <title>{{ $title }}</title>
 </head>
-<body>
-    <header class="d-flex align-items-start flex-column">
+<body class="{{ $body_class }}">
+    <header class="d-flex align-items-start flex-column"{!! isset($zk_header_bg) ? ' style="background-image: url('.$zk_header_bg.');"' : '' !!}>
         <div class="top w-100">
             <div class="container py-3">
 
@@ -116,12 +116,48 @@
             </div>
         </div>
 
-        <div class="title w-100 my-auto">
+        <div class="w-100 my-auto">
             <div class="container">
-                <div>
-                    <div class="display-4 text-white font-weight-bolder pb-2 mb-2 d-inline-block"><span>Квартиры в Новороссийске</span></div>
-                </div>
-                <div class="h5 text-white">Официальный партнер надежных застройщиков Новороссийска</div>
+                @if($body_class == 'zk')
+                    <div class="row">
+                        <div class="col-md-6 d-flex align-items-start flex-column mb-md-0 mb-4">
+
+                            <div class="w-100 my-auto">
+                                <div class="title">
+                                    <div class="display-4 text-white font-weight-bolder pb-2 mb-2 d-inline-block"><span>ЖК Мелодия Мысхако</span></div>
+                                </div>
+                                <div class="h5 text-white">
+                                    В 7 минутах от моря, 400м до обустроенного пляжа</div>
+                                {{--<div class="h5 text-white">528 квартир от 80 м<sup>2</sup> до 534 м<sup>2</sup> по цене от 7 900 000 руб.</div>--}}
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form form-zk-header px-4 py-3">
+                                <div class="form-group mb-3">
+                                    <div class="h4 font-weight-bolder text-center">Получить консультацию</div>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Ваше Имя">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <input type="text" id="phone-mask-zk" class="form-control form-control-lg phone-mask" placeholder="Ваш Телефон">
+                                </div>
+                                <div class="form-group mb-0">
+                                    <button type="submit" class="btn btn-lg btn-primary btn-block">Отправить заявку</button>
+                                    <div class="text-center text-secondary mt-2">
+                                        <small>Отправьте заявку и наш менеджер свяжется с Вами в ближайшее время</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @else
+                    <div class="title">
+                        <div class="display-4 text-white font-weight-bolder pb-2 mb-2 d-inline-block"><span>Квартиры в Новороссийске</span></div>
+                    </div>
+                    <div class="h5 text-white">Официальный партнер надежных застройщиков Новороссийска</div>
+                @endif
             </div>
         </div>
 

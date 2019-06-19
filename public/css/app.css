@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap&subset=cyrillic);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);/*!
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap&subset=cyrillic);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);.lb-loader,.lightbox{text-align:center;line-height:0}.lb-dataContainer:after,.lb-outerContainer:after{content:"";clear:both}body.lb-disable-scrolling{overflow:hidden}.lightboxOverlay{position:absolute;top:0;left:0;z-index:9999;background-color:#000;filter:alpha(Opacity=80);opacity:.8;display:none}.lightbox{position:absolute;left:0;width:100%;z-index:10000;font-weight:400}.lightbox .lb-image{display:block;height:auto;max-width:inherit;max-height:none;border-radius:3px;border:4px solid #fff}.lightbox a img{border:none}.lb-outerContainer{position:relative;width:250px;height:250px;margin:0 auto;border-radius:4px;background-color:#fff}.lb-loader,.lb-nav{position:absolute;left:0}.lb-outerContainer:after{display:table}.lb-loader{top:43%;height:25%;width:100%}.lb-cancel{display:block;width:32px;height:32px;margin:0 auto;background:url(/images/vendor/lightbox2/dist/loading.gif?2299ad0b3f63413f026dfec20c205b8f) no-repeat}.lb-nav{top:0;height:100%;width:100%;z-index:10}.lb-container>.nav{left:0}.lb-nav a{outline:0;background-image:url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)}.lb-next,.lb-prev{height:100%;cursor:pointer;display:block}.lb-nav a.lb-prev{width:34%;left:0;float:left;background:url(/images/vendor/lightbox2/dist/prev.png?84b76dee6b27b795e89e3649078a11c2) left 48% no-repeat;filter:alpha(Opacity=0);opacity:0;transition:opacity .6s}.lb-nav a.lb-prev:hover{filter:alpha(Opacity=100);opacity:1}.lb-nav a.lb-next{width:64%;right:0;float:right;background:url(/images/vendor/lightbox2/dist/next.png?31f15875975aab69085470aabbfec802) right 48% no-repeat;filter:alpha(Opacity=0);opacity:0;transition:opacity .6s}.lb-nav a.lb-next:hover{filter:alpha(Opacity=100);opacity:1}.lb-dataContainer{margin:0 auto;padding-top:5px;width:100%;border-bottom-left-radius:4px;border-bottom-right-radius:4px}.lb-dataContainer:after{display:table}.lb-data{padding:0 4px;color:#ccc}.lb-data .lb-details{width:85%;float:left;text-align:left;line-height:1.1em}.lb-data .lb-caption{font-size:13px;font-weight:700;line-height:1em}.lb-data .lb-caption a{color:#4ae}.lb-data .lb-number{display:block;clear:left;padding-bottom:1em;font-size:12px;color:#999}.lb-data .lb-close{display:block;float:right;width:30px;height:30px;background:url(/images/vendor/lightbox2/dist/close.png?d9d2d0b1308cb694aa8116915592e2a9) top right no-repeat;text-align:right;outline:0;filter:alpha(Opacity=70);opacity:.7;transition:opacity .2s}.lb-data .lb-close:hover{cursor:pointer;filter:alpha(Opacity=100);opacity:1}/*!
  * Font Awesome Free 5.9.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
@@ -8248,6 +8248,7 @@ button.bg-dark:focus {
 }
 
 .mb-4,
+#gallery_block .items .item,
 #work_block .items .item,
 .my-4 {
   margin-bottom: 1.5rem !important;
@@ -10707,6 +10708,22 @@ header {
   min-height: 100vh;
 }
 
+header > div {
+  z-index: 100;
+}
+
+header:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #1C93D1;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
 header .title span {
   position: relative;
   display: block;
@@ -10778,6 +10795,11 @@ header .to_zk a {
   background: #fff;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+header .form-zk-header {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
 }
 
 .content .heading .title span {
@@ -10988,7 +11010,7 @@ footer .socials a:hover {
 
 #whatsapp {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -11011,5 +11033,119 @@ footer .socials a:hover {
   body.show_whatsapp #whatsapp {
     display: block;
   }
+}
+
+#plain_block .items .item .inner {
+  transition: 0.1s ease-out;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #e9ecef;
+}
+
+#plain_block .items .item .inner > a {
+  display: block;
+  padding: 1.25rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+#plain_block .items .item .inner .img {
+  width: 100%;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#plain_block .items .item .inner .price {
+  color: #75B518;
+}
+
+#plain_block .items .item .inner .more {
+  transition: 0.1s ease-out;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#plain_block .items .item .inner .more:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #1C93D1;
+  opacity: 0.7;
+}
+
+#plain_block .items .item .inner .more .label {
+  color: #fff;
+  z-index: 100;
+}
+
+#plain_block .items .item .inner .more .label i {
+  font-size: 50px;
+}
+
+#plain_block .items .item .inner:hover {
+  border-color: transparent;
+}
+
+#plain_block .items .item .inner:hover .more {
+  opacity: 1;
+}
+
+#gallery_block {
+  color: #fff;
+  background: #75B518;
+}
+
+#gallery_block .heading .title span:after {
+  background: #fff;
+}
+
+#gallery_block .items {
+  text-align: center;
+}
+
+#gallery_block .items .item {
+  display: inline-block;
+  width: 270px;
+}
+
+#gallery_block .items .item .img {
+  width: 255px;
+  height: 255px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 1199.98px) {
+  #gallery_block .items .item .img {
+    width: 210px;
+    height: 210px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #gallery_block .items .item .img {
+    width: 255px;
+    height: 255px;
+  }
+}
+
+#zk_apparts_block .items .item .img {
+  min-height: 255px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 

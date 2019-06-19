@@ -3,6 +3,7 @@ window.$ = window.jQuery = $;
 require('jquery.mousewheel');
 require('popper.js');
 require('bootstrap');
+require('lightbox2');
 import IMask from 'imask';
 
 $.ajaxSetup({
@@ -15,13 +16,14 @@ $(document).ready(function () {
     console.log('123');
 
     if($('.phone-mask').length){
+        var i = 1;
         $('.phone-mask').each(function () {
-            if($(this).attr('id')){
-                var phoneMask = IMask(
-                    document.getElementById($(this).attr('id')), {
-                        mask: '+{7}(000)000-00-00'
-                    });
-            }
+            $(this).attr('id', 'phone-mask-f-'+i);
+            var phoneMask = IMask(
+                document.getElementById('phone-mask-f-'+i), {
+                    mask: '+{7}(000)000-00-00'
+                });
+            i++;
         });
     }
 

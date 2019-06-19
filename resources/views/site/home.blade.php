@@ -1,4 +1,4 @@
-@extends('site.layout')
+@extends('site.layout', ['body_class'=>'home'])
 
 @section('content')
     <section id="parth_block" class="content py-5">
@@ -60,7 +60,6 @@
         </div>
 
     </section>
-
     <section id="apparts_block" class="content py-5">
         <div class="container">
 
@@ -142,7 +141,6 @@
 
         </div>
     </section>
-
     <section id="sale_block" class="content py-5">
         <div class="container">
 
@@ -193,8 +191,6 @@
 
         </div>
     </section>
-
-
     <section id="zk_block" class="content py-5">
         <div class="container">
             <div class="heading text-center mb-5">
@@ -307,7 +303,6 @@
         </div>
 
     </section>
-
     <section id="work_block" class="content py-5">
         <div class="container">
 
@@ -414,7 +409,6 @@
 
         </div>
     </section>
-
     <section id="form_block" class="content py-5">
         <div class="container">
             <div class="heading text-center mb-5">
@@ -437,7 +431,6 @@
             </div>
         </div>
     </section>
-
     <section class="content py-5">
         <div class="container">
             <div class="heading text-center mb-5">
