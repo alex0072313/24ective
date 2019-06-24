@@ -414,7 +414,7 @@
         <div class="container">
 
             <div class="heading text-center mb-5">
-                <div class="title h1 mb-3 font-weight-light"><span class="pb-2">Застройщик</span></div>
+                <div class="title h1 mb-3 font-weight-bolder"><span class="pb-2">Застройщик</span></div>
                 <div class="desc">ООО «Кристалл»</div>
             </div>
 
@@ -433,7 +433,7 @@
         <div class="container">
 
             <div class="heading text-center mb-5">
-                <div class="title h1 mb-3 font-weight-light"><span class="pb-2">Расположение ЖК Мелодия Мысхако</span></div>
+                <div class="title h1 mb-3 font-weight-bolder"><span class="pb-2">Расположение ЖК Мелодия Мысхако</span></div>
                 <div class="desc">Расположен по адресу г.Новороссийск, с.Мысхако, ул.Молодежная 23-б</div>
             </div>
 

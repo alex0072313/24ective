@@ -10802,6 +10802,35 @@ header .form-zk-header {
   border-radius: 20px;
 }
 
+.default header {
+  min-height: inherit;
+  background: #fff;
+}
+
+.default header:before {
+  display: none;
+}
+
+.default .address,
+.default .phone {
+  color: #343a40 !important;
+}
+
+.default .nav-item .btn {
+  color: #343a40 !important;
+  border: 1px solid transparent;
+}
+
+.default .nav-item .btn:hover {
+  background: transparent;
+  color: #343a40 !important;
+  border-color: #343a40 !important;
+}
+
+.default .nav-item.active .btn {
+  border-color: #343a40 !important;
+}
+
 .content .heading .title span {
   position: relative;
   display: block;
@@ -11016,6 +11045,7 @@ footer .socials a:hover {
   left: 0;
   right: 0;
   background: #fff;
+  z-index: 1000;
   overflow-y: auto;
 }
 
@@ -11147,5 +11177,10 @@ footer .socials a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+#contacts .form {
+  background: #e9ecef;
+  border-radius: 20px;
 }
 

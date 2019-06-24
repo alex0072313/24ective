@@ -172,6 +172,40 @@ header{
     }
 }
 
+.default{
+    header{
+        min-height: inherit;
+        &:before{
+            display: none;
+        }
+        background: $white;
+    }
+
+    .address, .phone{
+        color: $dark !important;
+    }
+
+    .nav-item{
+
+        .btn{
+            color: $dark !important;
+            border: 1px solid transparent;
+            &:hover{
+                background: transparent;
+                color: $dark !important;
+                border-color: $dark !important;
+            }
+        }
+
+        &.active{
+            .btn{
+                border-color: $dark !important;
+            }
+        }
+    }
+
+}
+
 .content{
     .heading{
         .title{
@@ -401,6 +435,7 @@ footer{
     left: 0;
     right: 0;
     background: $white;
+    z-index: 1000;
     .close{
         position: absolute;
         top:40px;
@@ -540,6 +575,9 @@ body.show_whatsapp{
     }
 }
 
-#worker_block{
-
+#contacts{
+    .form{
+        background: $gray-200;
+        border-radius: 20px;
+    }
 }

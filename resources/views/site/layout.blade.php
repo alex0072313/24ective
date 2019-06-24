@@ -16,11 +16,17 @@
             <div class="container py-3">
 
                 <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                    <a class="navbar-brand py-0" href="#"><img src="/images/theme/logo4.png" alt="" width="83" height="75"></a>
+                    <a class="navbar-brand py-0" href="#"><img src="{{ (($body_class == 'zk') || ($body_class == 'home')) ? '/images/theme/logo4.png' : '/images/theme/logo3.png' }}" alt="" width="83" height="75"></a>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    {{--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">--}}
+                        {{--<span class="navbar-toggler-icon"></span>--}}
+                    {{--</button>--}}
+
+                    <button class="btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
                     </button>
+
+
 
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <div class="mr-auto ml-3">
@@ -49,7 +55,7 @@
 
                         <div class="d-lg-block d-none">
 
-                            <div class="mb-2"><a href="tel:88002015603" class="h4 text-white font-weight-light">8 800 201-56-03</a></div>
+                            <div class="mb-2"><a href="tel:88002015603" class="h4 text-white font-weight-light phone">8 800 201-56-03</a></div>
                             <div><a href="javascript:;" class="btn btn-primary btn-block" data-toggle="modal" data-target="#callback_modal" >Заказать звонок</a></div>
 
                             @push('modals')
@@ -97,8 +103,8 @@
                         <i class="fas fa-map-marker-alt mr-1"></i> г.Новороссийск, ул. Лейтенанта Шмидта, д.39
                     </div>
 
-                    <div class="mb-2"><a href="tel:88002015603" class="h4 text-white">8 800 201-56-03</a></div>
-                    <div><a href="javascript:;" class="btn btn-primary btn-block" data-toggle="modal" data-target="#callback_modal" >Заказать звонок</a></div>
+                    <div class="mb-2"><a href="tel:88002015603" class="h4 text-white phone">8 800 201-56-03</a></div>
+                    <div><a href="javascript:;" class="btn btn-primary btn-block" data-toggle="modal" data-target="#callback_modal">Заказать звонок</a></div>
                 </div>
 
                 {{--<div class="logo">--}}
@@ -121,7 +127,6 @@
                 @if($body_class == 'zk')
                     <div class="row">
                         <div class="col-md-6 d-flex align-items-start flex-column mb-md-0 mb-4">
-
                             <div class="w-100 my-auto">
                                 <div class="title">
                                     <div class="display-4 text-white font-weight-bolder pb-2 mb-2 d-inline-block"><span>ЖК Мелодия Мысхако</span></div>
@@ -130,7 +135,6 @@
                                     В 7 минутах от моря, 400м до обустроенного пляжа</div>
                                 {{--<div class="h5 text-white">528 квартир от 80 м<sup>2</sup> до 534 м<sup>2</sup> по цене от 7 900 000 руб.</div>--}}
                             </div>
-
                         </div>
                         <div class="col-md-6">
                             <div class="form form-zk-header px-4 py-3">
@@ -152,7 +156,7 @@
                             </div>
                         </div>
                     </div>
-                @else
+                @elseif($body_class == 'home')
                     <div class="title">
                         <div class="display-4 text-white font-weight-bolder pb-2 mb-2 d-inline-block"><span>Квартиры в Новороссийске</span></div>
                     </div>
@@ -193,7 +197,7 @@
                             <a href="javascript:;" class="" data-toggle="modal" data-target="#callback_modal">Заказать звонок</a>
                         </div>
 
-                        <ul class="list-unstyled w_icons pt-2">
+                        <ul class="list-unstyled w_icons pt-2 text-white">
                             <li class="d-inline-block d-md-block"><i class="fas fa-map-marker-alt mr-1 fa-sm"></i> г.Новороссийск, ул. Лейтенанта Шмидта, д.39</li>
                             <li class="d-inline-block d-md-block"><i class="fas fa-clock mr-1 fa-sm"></i> Пн-Пт с 8:00 до 20:00, Сб-Вс с 10:00 до 17:00</li>
                         </ul>
